@@ -1,0 +1,289 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0d369f;
+    --secondary-color: #ff6e65;
+    
+}
+
+.dark {
+    --primary-color:#4867b0;
+}
+
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* TOP HEADER */
+
+.topHeader {
+    background-color: var(--primary-color);
+    padding: 14px 15px;
+}
+
+.topHeader li {
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.topHeader a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.topHeader a:hover {
+    color: var(--secondary-color);
+}
+
+.topHeader .topHeader__left i {
+    margin-right: 8px;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+/* DARK THEME */
+
+.dark .topHeader {
+    background-color: var(--primary-color);
+}
+
+
+/* HEADER */
+
+
+
+header {
+    height: 90px;
+    height: 50000px;
+
+}
+
+.navbar {
+    padding: 1.2rem 1rem;
+}
+
+.navbar span {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.navbar span:hover {
+    color: var(--secondary-color);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+}
+
+header .nav-item {
+    padding: 0 12px;
+}
+
+header .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: all 0.5s;
+ 
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+    right: 0;
+}
+
+header .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+a.dropdown-item {
+    font-size: 16px;
+    color: var(--heading-color);
+    padding: 5px 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+a.dropdown-item:hover {
+    color: var(--secondary-color);
+}
+
+header .form-inline input {
+    font-size: 15px;
+    color: #060606;
+    border: none;
+    background: transparent;
+    padding: 10px 35px 10px 20px;
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid #eee;
+
+}
+
+header .form-inline {
+    position: relative;
+    margin: 0 10px 0 10px;
+}
+
+button.search-btn {
+    position: absolute;
+    color: var(--primary-color);
+    right: 0;
+    padding: 0px 20px 0px 0px;
+    transition: all 0.5s;
+}
+
+button.search-btn:hover {
+    color: var(--secondary-color);
+}
+
+header .active .nav-link {
+    color: var(--secondary-color);
+}
+
+.darklight {
+    width: 24px;
+    height: 24px;
+    padding: 0px 0;
+    margin-left: 10px;
+    color: var(--primary-color);
+    border: none;
+    text-decoration-color: none;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.darklight:hover {
+    color: var(--secondary-color);
+}
+
+.darklight i {
+    font-size: 15px;
+   
+}
+
+
+.darklight i.gg-moon {
+    display: block;
+    cursor: pointer;
+}
+
+.darklight .gg-moon {
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(var(--ggs, 1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom: 2px solid transparent;
+}
+
+.darklight .gg-moon:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px;
+}
+
+.darklight .gg-moon, .gg-moon:after {
+     display: block;
+     border-radius: 50%;
+}   
+
+.darklight .gg-sun {
+    position: relative;
+    transform: scale(var(--ggs, 1));
+    height: 24px;
+    background: linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px, linear-gradient(180deg, currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 2px;
+    border: 6px solid transparent;
+}
+
+.darklight .gg-sun:after, .gg-sun:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    left: -6px;
+    top: 5px;
+}
+
+.darklight .gg-sun, .gg-sun:after, .gg-sun:before {
+    display: block;
+    width: 24px;
+}
+
+.darklight .gg-sun:before {
+    transform: rotate(-45deg);
+}
+
+.darklight .gg-sun:after {
+    transform: rotate(45deg);
+}
+
+.darklight .gg-sun {
+    display: none;
+}
+/* DARK THEME */
+
+.dark .navbar span,.dark header .nav-link {
+    color: white;
+}
+
+.dark header .active .nav-link {
+    color: var(--secondary-color);
+}
+
+.dark header {
+    background-color: #161c2d;
+}
+
+.dark .darklight {
+   
+    background-color:#161c2d;
+  
+}
+
+.dark .darklight .gg-moon {
+    display: none;
+    cursor: pointer;
+}
+
+.dark .darklight .gg-sun {
+    display: block;
+    cursor: pointer;
+}
