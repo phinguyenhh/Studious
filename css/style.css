@@ -77,8 +77,6 @@ ol {
 
 header {
     height: 90px;
-    height: 50000px;
-
 }
 
 .navbar {
@@ -115,25 +113,54 @@ header .nav-link {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0;
-    right: 0;
+    padding: 6px 0;
+    margin: 0;
 }
 
 header .nav-link:hover {
     color: var(--secondary-color);
 }
 
+.dropdown-menu {
+    min-width: 12rem;
+    padding: 1rem 0;
+}
+
 a.dropdown-item {
     font-size: 16px;
-    color: var(--heading-color);
+    color: #060606;
     padding: 5px 24px;
     font-weight: 600;
     text-transform: uppercase;
     transition: all 0.5s;
 }
 
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    transform: translateX(-50px);
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
+}
+
+.dark .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #161c2d;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: block;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%) rotateZ(45deg);
+    position: absolute;
+    top: -7px;
+    left: 49%;
+    z-index: 1001;
+}
+
 a.dropdown-item:hover {
     color: var(--secondary-color);
+    background-color: transparent;
 }
 
 header .form-inline input {
@@ -143,9 +170,10 @@ header .form-inline input {
     background: transparent;
     padding: 10px 35px 10px 20px;
     width: 100%;
+    height: 50px;
     border-radius: 30px;
     border: 2px solid #eee;
-
+    
 }
 
 header .form-inline {
@@ -179,6 +207,9 @@ header .active .nav-link {
     text-decoration-color: none;
     background-color: white;
     transition: all 0.5s;
+    background-color: transparent;
+
+    
 }
 
 .darklight:hover {
@@ -194,6 +225,7 @@ header .active .nav-link {
 .darklight i.gg-moon {
     display: block;
     cursor: pointer;
+    
 }
 
 .darklight .gg-moon {
@@ -275,6 +307,7 @@ header .active .nav-link {
 .dark .darklight {
    
     background-color:#161c2d;
+    background-color: transparent;
   
 }
 
@@ -287,3 +320,18 @@ header .active .nav-link {
     display: block;
     cursor: pointer;
 }
+
+.dark .navbar-expand-lg .navbar-nav .dropdown-menu {
+    background: #161c2d;
+}
+
+.dark a.dropdown-item {
+    color: white;
+    transition: all 0.5s;
+}
+
+.dark a.dropdown-item:hover {
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
