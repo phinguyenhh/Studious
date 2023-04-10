@@ -62,8 +62,15 @@ ol {
     margin-right: 8px;
     color: #fff;
     font-size: 12px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-7%);
 }
 
+.topHeader .topHeader__left li:last-child i {
+    transform: translateY(0%);
+    font-size: 15px;
+} 
 
 .topHeader .topHeader__left .mailIcon {
     font-size: 15px;
@@ -72,6 +79,7 @@ ol {
 .topHeader .topHeader__right i {
     font-size: 14px;
 }
+
 
 
 /* DARK THEME */
@@ -249,9 +257,10 @@ button.search-btn {
     position: absolute;
     color: var(--primary-color);
     right: 0px;
+    bottom: 10px;
     padding: 0px 20px 0px 0px;
     transition: all 0.5s;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
 }
 
