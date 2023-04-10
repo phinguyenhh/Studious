@@ -91,6 +91,7 @@ header {
     display: grid;
     align-items: center;
     background-color: white;
+    transition: all 0.5s ease;
 }
 
 .header__fix {
@@ -120,6 +121,18 @@ header {
 
 .header__fixnav .navbar .form-inline {
     margin: -6px 10px 0 10px;
+}
+
+.header__fixnav .navbar .navbar-nav {
+    margin-top: -5px;
+}
+
+.header__fixnav .navbar .header__darklight {
+    margin-top: -5px;
+}
+
+.header__fixnav .gg-moon,.header__fixnav .gg-moon:after {
+    color: #060606;
 }
 
 .navbar {
@@ -200,21 +213,6 @@ a.dropdown-item {
     box-shadow: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
 }
 
-.dark .navbar-expand-lg .navbar-nav .dropdown-menu:before {
-    content: '';
-    width: 14px;
-    height: 14px;
-    background: #161c2d;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: block;
-    border-right: none;
-    border-bottom: none;
-    transform: translateX(-50%) rotateZ(45deg);
-    position: absolute;
-    top: -7px;
-    left: 49%;
-    z-index: 1001;
-}
 
 a.dropdown-item:hover {
     color: var(--secondary-color);
@@ -226,9 +224,9 @@ header .header__inputsearch input {
     color: #060606;
     border: none;
     background: transparent;
-    padding: 10px 35px 10px 20px;
+    padding: 9px 35px 10px 20px;
     width: 100%;
-    height: 50px;
+    height: 46px;
     border-radius: 30px;
     border: 2px solid #eee;
     
@@ -293,6 +291,7 @@ header .active .nav-link {
 .darklight i.gg-moon {
     display: block;
     cursor: pointer;
+    margin-top: 3px;
     
 }
 
@@ -391,11 +390,29 @@ header .active .nav-link {
 .dark .darklight .gg-sun {
     display: block;
     cursor: pointer;
+    margin-top: 7px;
 }
 
 .dark .navbar-expand-lg .navbar-nav .dropdown-menu {
     background: #161c2d;
 }
+
+.dark .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #161c2d;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: block;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%) rotateZ(45deg);
+    position: absolute;
+    top: -7px;
+    left: 49%;
+    z-index: 1001;
+}
+
 
 .dark a.dropdown-item {
     color: white;
@@ -410,5 +427,8 @@ header .active .nav-link {
 .dark header .form-inline input {
     background: transparent;
     color: white;
-    
+}
+
+.dark ::placeholder {
+    color: white;
 }
