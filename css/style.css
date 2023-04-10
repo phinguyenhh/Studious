@@ -39,6 +39,7 @@ ol {
 .topHeader {
     background-color: var(--primary-color);
     padding: 14px 15px;
+    z-index: 100;
 }
 
 .topHeader li {
@@ -60,6 +61,11 @@ ol {
 .topHeader .topHeader__left i {
     margin-right: 8px;
     color: #fff;
+    font-size: 12px;
+}
+
+
+.topHeader .topHeader__left .mailIcon {
     font-size: 15px;
 }
 
@@ -80,9 +86,40 @@ ol {
 
 
 header {
+    
     height: 90px;
     display: grid;
     align-items: center;
+    background-color: white;
+}
+
+.header__fix {
+    position: sticky;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.header__fixnav {
+    padding: 0px;
+    border-bottom: none;
+    z-index: 999 ;
+    background-color: #fff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    height: 70px;
+}
+
+.header__fixnav .navbar .navbar-brand img {
+    margin-top: -7px;
+}
+
+.header__fixnav .navbar .navbar-brand span {
+    margin-top: -5px;
+}
+
+.header__fixnav .navbar .form-inline {
+    margin: -6px 10px 0 10px;
 }
 
 .navbar {
@@ -126,8 +163,13 @@ header .nav-link {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 6px 0;
-    margin: 0;
+    margin:0;
 }
+
+.navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+    margin-right: 6px;
+    margin-left: -4.5px;
+} 
 
 header .nav-link:hover {
     color: var(--secondary-color);
@@ -145,6 +187,10 @@ a.dropdown-item {
     font-weight: 600;
     text-transform: uppercase;
     transition: all 0.5s;
+}
+
+.dropdown-toggle::after {
+    margin: 0;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -175,14 +221,14 @@ a.dropdown-item:hover {
     background-color: transparent;
 }
 
-header .form-inline input {
+header .header__inputsearch input {
     font-size: 15px;
     color: #060606;
     border: none;
     background: transparent;
     padding: 10px 35px 10px 20px;
     width: 100%;
-    height: 47px;
+    height: 50px;
     border-radius: 30px;
     border: 2px solid #eee;
     
