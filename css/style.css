@@ -8,7 +8,8 @@
 :root {
     --primary-color: #0d369f;
     --secondary-color: #ff6e65;
-    
+    --bg-color: #fff;
+    --heading-color: #060606;
 }
 
 .dark {
@@ -365,4 +366,47 @@ header .active .nav-link {
     background: transparent;
     color: white;
     
+}
+
+/* SERVICES */
+
+.stdServices__contents{
+    background-image: url(../img/bg3.jpg);
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.stdServices__items{
+    padding: 30px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+}
+
+
+.stdServices__icon i{
+    font-size: 28px;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background-color: #e9edf6;
+    text-align: center;
+    line-height: 66px;
+    margin-right: 16px;
+}
+
+.stdServices__text h5{
+    font-size: 20px;
+    color: var(--heading-color);
+    font-weight: 600;
+    margin-bottom: 6px;
+    line-height: 30px;
+}
+
+.stdServices__text p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: .4px;
+    margin-bottom: 0;
 }
