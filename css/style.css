@@ -40,6 +40,7 @@ ol {
 .topHeader {
     background-color: var(--primary-color);
     padding: 14px 15px;
+    z-index: 100;
 }
 
 .topHeader li {
@@ -61,12 +62,25 @@ ol {
 .topHeader .topHeader__left i {
     margin-right: 8px;
     color: #fff;
+    font-size: 12px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-7%);
+}
+
+.topHeader .topHeader__left li:last-child i {
+    transform: translateY(0%);
+    font-size: 15px;
+} 
+
+.topHeader .topHeader__left .mailIcon {
     font-size: 15px;
 }
 
 .topHeader .topHeader__right i {
     font-size: 14px;
 }
+
 
 
 /* DARK THEME */
@@ -81,9 +95,53 @@ ol {
 
 
 header {
+    
     height: 90px;
     display: grid;
     align-items: center;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.header__fix {
+    position: sticky;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.header__fixnav {
+    padding: 0px;
+    border-bottom: none;
+    z-index: 999 ;
+    background-color: #fff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    height: 70px;
+}
+
+.header__fixnav .navbar .navbar-brand img {
+    margin-top: -7px;
+}
+
+.header__fixnav .navbar .navbar-brand span {
+    margin-top: -5px;
+}
+
+.header__fixnav .navbar .form-inline {
+    margin: -6px 10px 0 10px;
+}
+
+.header__fixnav .navbar .navbar-nav {
+    margin-top: -5px;
+}
+
+.header__fixnav .navbar .header__darklight {
+    margin-top: -5px;
+}
+
+.header__fixnav .gg-moon,.header__fixnav .gg-moon:after {
+    color: #060606;
 }
 
 .navbar {
@@ -127,8 +185,13 @@ header .nav-link {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 6px 0;
-    margin: 0;
+    margin:0;
 }
+
+.navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+    margin-right: 6px;
+    margin-left: -4.5px;
+} 
 
 header .nav-link:hover {
     color: var(--secondary-color);
@@ -148,6 +211,10 @@ a.dropdown-item {
     transition: all 0.5s;
 }
 
+.dropdown-toggle::after {
+    margin: 0;
+}
+
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     transform: translateX(-50px);
     background: white;
@@ -155,35 +222,20 @@ a.dropdown-item {
     box-shadow: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
 }
 
-.dark .navbar-expand-lg .navbar-nav .dropdown-menu:before {
-    content: '';
-    width: 14px;
-    height: 14px;
-    background: #161c2d;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: block;
-    border-right: none;
-    border-bottom: none;
-    transform: translateX(-50%) rotateZ(45deg);
-    position: absolute;
-    top: -7px;
-    left: 49%;
-    z-index: 1001;
-}
 
 a.dropdown-item:hover {
     color: var(--secondary-color);
     background-color: transparent;
 }
 
-header .form-inline input {
+header .header__inputsearch input {
     font-size: 15px;
     color: #060606;
     border: none;
     background: transparent;
-    padding: 10px 35px 10px 20px;
+    padding: 9px 35px 10px 20px;
     width: 100%;
-    height: 47px;
+    height: 46px;
     border-radius: 30px;
     border: 2px solid #eee;
     
@@ -206,9 +258,10 @@ button.search-btn {
     position: absolute;
     color: var(--primary-color);
     right: 0px;
+    bottom: 10px;
     padding: 0px 20px 0px 0px;
     transition: all 0.5s;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -248,6 +301,7 @@ header .active .nav-link {
 .darklight i.gg-moon {
     display: block;
     cursor: pointer;
+    margin-top: 3px;
     
 }
 
@@ -346,11 +400,29 @@ header .active .nav-link {
 .dark .darklight .gg-sun {
     display: block;
     cursor: pointer;
+    margin-top: 7px;
 }
 
 .dark .navbar-expand-lg .navbar-nav .dropdown-menu {
     background: #161c2d;
 }
+
+.dark .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background: #161c2d;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: block;
+    border-right: none;
+    border-bottom: none;
+    transform: translateX(-50%) rotateZ(45deg);
+    position: absolute;
+    top: -7px;
+    left: 49%;
+    z-index: 1001;
+}
+
 
 .dark a.dropdown-item {
     color: white;
@@ -365,7 +437,10 @@ header .active .nav-link {
 .dark header .form-inline input {
     background: transparent;
     color: white;
-    
+}
+
+.dark ::placeholder {
+    color: white;
 }
 
 /* SERVICES */

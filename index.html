@@ -38,6 +38,7 @@
             <li><a href="">Have any question ?</a></li>
             <li><i class="fa-solid fa-phone"></i><a href="">+1(21) 234 4567</a></li>
             <li><i class="fa-solid fa-envelope"></i><a href="">mail@example.com</a></li>
+            <li><i class="fa-solid fa-envelope mailIcon"></i><a href="">mail@example.com</a></li>
           </ul>
         </div>
         <div class="topHeader__right">
@@ -52,7 +53,7 @@
     </div>
   </section>
 
-  <header>
+  <header id="header" class="header__fix ">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg">
         <h1>
@@ -60,6 +61,12 @@
             <img class="mr-1" src="./img/logo.png" alt="">
             <span>Studious</span>
           </a>
+
+        </h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stdNavbar"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
         </h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stdNavbar"
@@ -147,8 +154,7 @@
                 <div class="col-md-6 mt-md-0 mt-4 stdServices-elements">
                   <div class="stdServices__items d-flex align-items-center">
                     <div class="stdServices__icon">
-                      <i class="fa fa-download"
-                      aria-hidden="true"></i>
+                      <i class="fa fa-download" aria-hidden="true"></i>
                     </div>
                     <div class="stdServices__text">
                       <h5>Offline Mode</h5>
@@ -159,8 +165,7 @@
                 <div class="col-md-6 mt-4 pt-md-2 stdServices-elements">
                   <div class="stdServices__items d-flex align-items-center">
                     <div class="stdServices__icon">
-                      <i class="fa fa-headphones"
-                      aria-hidden="true"></i>
+                      <i class="fa fa-headphones" aria-hidden="true"></i>
                     </div>
                     <div class="stdServices__text">
                       <h5>Educator Help </h5>
@@ -171,8 +176,7 @@
                 <div class="col-md-6 mt-4 pt-md-2 stdServices-elements">
                   <div class="stdServices__items d-flex align-items-center">
                     <div class="stdServices__icon">
-                      <i class="fa fa-play-circle"
-                      aria-hidden="true"></i>
+                      <i class="fa fa-play-circle" aria-hidden="true"></i>
                     </div>
                     <div class="stdServices__text">
                       <h5>Online Classes</h5>
@@ -200,7 +204,6 @@
   <section class="stdInstructors"></section>
 
   <section class="stdContact"></section>
-
   <footer></footer>
 
 
@@ -209,27 +212,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
   <!-- BS -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -241,15 +224,21 @@
   <script>
     document.getElementById('darklight').onclick = function () {
       document.getElementById('myBody').classList.toggle('dark')
-
     }
-
-
   </script>
 
+  <!-- Scroll header -->
 
+  <script>
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 50) {
+        document.getElementById('header').classList.add('header__fixnav')
+      } else {
+        document.getElementById("header").classList.remove('header__fixnav')
+      }
 
-
+    }
+  </script>
 
 
 </body>
