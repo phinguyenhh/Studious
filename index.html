@@ -22,6 +22,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+
+  <!-- OWL CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- STYLE CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -76,7 +86,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                PAGES
+                PAGES <i class="fa-solid fa-chevron-down"></i>
               </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">BLOG POSTS</a>
@@ -112,14 +122,41 @@
   </header>
 
   <section class="stdCarousel">
-    <div id="stdCarousel" data-touch="true" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/banner2.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/banner3.jpg" class="d-block w-100" alt="...">
-        </div>
+    <div id="stdCarousel">
+
+      <div class="owl-one owl-carousel owl-theme owl-loaded owl-drag">      
+            <div class="stdCarousel__bannerview banner2">             
+              <div class="banner__info">
+                <div class="container">
+    
+                  <div class="active stdCarousel__bg">
+    
+                    <h5>Master the Skills to Drive your Career   </h5>
+                    <a class="btnCarousel mt-sm-5 mt-4">Know More <i class="fa-solid fa-arrow-right ml-2 "></i></a>
+    
+    
+    
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+            <div class="stdCarousel__bannerview banner3">             
+              <div class="banner__info">
+                <div class="container">
+    
+                  <div class="active stdCarousel__bg">
+    
+                    <h5>   Studious is the best choice for everyone    </h5>
+                    <a class="btnCarousel mt-sm-5 mt-4">Know More <i class="fa-solid fa-arrow-right ml-2 "></i></a>
+    
+    
+    
+                  </div>
+    
+                </div>
+              </div>
+            </div>           
       </div>
     </div>
   </section>
@@ -163,7 +200,9 @@
 
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 
@@ -185,18 +224,51 @@
 
   <script>
     window.onscroll = function () {
-      if (document.documentElement.scrollTop > 50) { 
+      if (document.documentElement.scrollTop > 50) {
         document.getElementById('header').classList.add('header__fixnav')
-      }else {
-    document.getElementById("header").classList.remove('header__fixnav')
-  }
+      } else {
+        document.getElementById("header").classList.remove('header__fixnav')
+      }
 
     }
   </script>
 
-
-
-
+  <!-- OWL -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      $('.owl-one').owlCarousel({
+        loop: false,
+        margin: 0,
+        nav: false,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          480: {
+            items: 1,
+            nav: false
+          },
+          667: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 1,
+            nav: false
+          }
+        }
+      })
+    })
+  </script>
 
 </body>
 
