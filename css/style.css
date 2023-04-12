@@ -546,7 +546,7 @@ header .active .nav-link {
     flex-direction: column;
 }
 
-.owl-dots button {
+.owl-dots .owl-dot {
     margin-top: 2px;
 } 
 
