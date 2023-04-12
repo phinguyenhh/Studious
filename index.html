@@ -270,7 +270,7 @@
     </div>
   </section>
 
-  <section class="stdClasses">
+  <section class="stdClasses ">
     <div class="stdClasses__contents py-5">
       <div class="container py-md-5 py-4">
         <div class="stdClasses__grid">
@@ -331,7 +331,35 @@
     </div>
   </section>
 
-  <section class="stdNumbers"></section>
+  <section class="stdNumbers py-sm-5 pt-sm-0 pt-5">
+    <div class="container py-md-5 py-4">
+      <div class="stdNumbers__title text-center mx-auto mb-5 pb-sm-4">
+        <h3 class="title-main-number mb-0">Strength in <span>Numbers</span></h3>
+        <p class="mt-4 pt-md-2">Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+          fuga.</p>
+      </div>
+      <div class="stdNumbers__digits">
+        <div class="row text-center">
+          <div class="col-lg-3 borderStdNum">
+            <div class="counter numberCount">6,300</div>
+            <p class="textCount">LEARNERS & COUNTING</p>
+          </div>
+          <div class="col-lg-3 borderStdNum">
+            <div class="counter numberCount">638</div>
+            <p class="textCount">TOTAL COURSES</p>
+          </div>
+          <div class="col-lg-3 borderStdNum">
+            <div class="counter numberCount">7,600</div>
+            <p class="textCount">SUCCESSFUL STUDENTS</p>
+          </div>
+          <div class="col-lg-3 borderStdNum border-right-0">
+            <div class="counter numberCount">36</div>
+            <p class="textCount">LANGUAGES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="stdFeedback"></section>
 
@@ -344,8 +372,25 @@
 
 
 
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <!-- Waypoint -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <script src="./js/jquery.countup.js"></script>
+    <script>
+
+        $('.counter').counterUp({
+            delay: 10,
+            time: 5000
+        });
+
+    </script>
 
 
 

@@ -741,3 +741,108 @@ h3.title-main:before, h3.title-main:after {
     letter-spacing: .4px;
     margin-bottom: 0;
 }
+
+
+/* DARK THEME CLASSES */
+.dark .stdClasses__items{
+    background-color: #161c2d;
+}
+
+.dark .stdClasses__icon i{
+    color: #4867b0;
+    background-color: #151e37;
+}
+
+.dark .stdClasses__text h5{
+    color: #fff;
+}
+
+.dark .stdClasses__text p{
+    color: #b7b7b7;
+}
+
+/* NUMBER */
+
+.stdNumbers__title{
+    max-width: 700px;
+}
+
+.stdNumbers__title h3{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #060606;
+    position: relative; 
+}
+
+.stdNumbers__title span{
+    color: #ff6e65;
+}
+
+.stdNumbers__title p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: .4px;
+}
+
+
+h3.title-main-number::before, 
+h3.title-main-number::after{
+    content: "";
+    background: #707070;
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+h3.title-main-number::before{
+    left: -20px;
+    bottom: -8px;
+}
+
+h3.title-main-number::after{
+    left: 20px;
+    bottom: -15px;
+}
+
+.stdNumbers__digits .numberCount{
+    font-size: 46px;
+    font-weight: 600;
+    color: #060606;
+}
+
+p.textCount{
+    text-transform: uppercase;
+    color: #060606;
+}
+
+.borderStdNum{
+    border-right: 1px solid #eee;
+}
+
+/* DARK THEME NUMBER */
+
+.dark .stdNumbers{
+    background-color: #161c2d;
+}
+
+.dark h3.title-main-number{
+    color: #fdfffc;
+}
+
+.dark .stdNumbers__title p{
+    color: #b7b7b7;
+}
+
+.dark .borderStdNum div, .dark .borderStdNum p{
+    color: #fdfffc;
+}
+
+.dark h3.title-main-number::before, 
+.dark h3.title-main-number::after{
+    background: #b7b7b7;
+}
