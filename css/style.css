@@ -705,6 +705,7 @@ h3.title-main:before, h3.title-main:after {
     background-image: url(../img/bg3.jpg);
     background-position: bottom;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .stdClasses__items{
@@ -847,3 +848,56 @@ p.textCount{
     background: #b7b7b7;
 }
 
+@media (max-width: 576px) {
+    .stdClasses__contents{
+        background-size: cover
+    }
+}
+
+
+
+@media (min-width: 576px) {
+    .container{
+        max-width: 540px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .stdClasses__contents{
+        background-size: cover
+    }
+}
+
+
+@media (min-width: 768px) {
+    .container{
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .stdClasses__contents{
+        background-size: cover
+    }
+}
+
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
