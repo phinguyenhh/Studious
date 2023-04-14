@@ -98,12 +98,11 @@ ol {
 
 
 
-header {
-    
+header {  
     height: 90px;
     display: grid;
     align-items: center;
-    background-color: white;
+    background-color: transparent;
     transition: all 0.5s ease;
 }
 
@@ -529,6 +528,7 @@ header .active .nav-link {
     background: #fff;
     border: none;
     transition: all .25s ease-in-out;
+    cursor: pointer;
 }
 
 .btnCarousel:hover {
@@ -683,7 +683,7 @@ h3.title-main:before, h3.title-main:after {
     background-color: #161c2d;
 }
 
-.dark .stdStudious h3.title-main,.stdStudious h3.stdStudious__title {
+.dark .stdStudious h3.title-main,.dark .stdStudious h3.stdStudious__title {
     color: white;
 }
 
@@ -847,6 +847,7 @@ p.textCount{
 .dark h3.title-main-number::after{
     background: #b7b7b7;
 }
+
 
 
 /* BACK TO TOP */
@@ -1093,5 +1094,7 @@ p.textCount{
         margin-bottom: 8px;
     }
 }
+
+
 
 
