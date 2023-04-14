@@ -683,7 +683,7 @@ h3.title-main:before, h3.title-main:after {
     background-color: #161c2d;
 }
 
-.dark .stdStudious h3.title-main,.stdStudious h3.stdStudious__title {
+.dark .stdStudious h3.title-main,.dark .stdStudious h3.stdStudious__title {
     color: white;
 }
 
