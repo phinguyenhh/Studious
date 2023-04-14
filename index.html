@@ -39,7 +39,7 @@
 
 <body id="myBody">
 
-  <section class="topHeader">
+  <section class="topHeader d-none d-lg-block">
     <div class="container-fluid">
       <div class="topHeader__content d-flex align-items-center justify-content-between">
 
@@ -70,12 +70,6 @@
             <img class="mr-1" src="./img/logo.png" alt="">
             <span>Studious</span>
           </a>
-
-        </h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stdNavbar"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars"></i>
-        </button>
 
         </h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stdNavbar"
@@ -340,19 +334,19 @@
       </div>
       <div class="stdNumbers__digits">
         <div class="row text-center">
-          <div class="col-lg-3 borderStdNum">
+          <div class="col-lg-3 col-sm-6 borderStdNum">
             <div class="counter numberCount">6,300</div>
             <p class="textCount">LEARNERS & COUNTING</p>
           </div>
-          <div class="col-lg-3 borderStdNum">
+          <div class="col-lg-3 col-sm-6 borderStdNum">
             <div class="counter numberCount">638</div>
             <p class="textCount">TOTAL COURSES</p>
           </div>
-          <div class="col-lg-3 borderStdNum">
+          <div class="col-lg-3 col-sm-6 borderStdNum">
             <div class="counter numberCount">7,600</div>
             <p class="textCount">SUCCESSFUL STUDENTS</p>
           </div>
-          <div class="col-lg-3 borderStdNum border-right-0">
+          <div class="col-lg-3 col-sm-6 borderStdNum border-right-0">
             <div class="counter numberCount">36</div>
             <p class="textCount">LANGUAGES</p>
           </div>
@@ -369,7 +363,10 @@
 
   <footer></footer>
 
-
+  <!-- BackToTop -->
+  <a href="#" class="backtotop cd-top text-replace js-cd-top">
+    <i class="fa-sharp fa-solid fa-turn-up"></i>
+</a>
 
 
   <!-- JQUERY -->
@@ -423,7 +420,7 @@
 
   <script>
     window.onscroll = function () {
-      if (document.documentElement.scrollTop > 50) {
+      if (document.documentElement.scrollTop > 20) {
         document.getElementById('header').classList.add('header__fixnav')
       } else {
         document.getElementById("header").classList.remove('header__fixnav')
@@ -439,7 +436,7 @@
   <script>
     $(document).ready(function () {
       $('.owl-one').owlCarousel({
-        loop: false,
+        loop: true,
         margin: 0,
         nav: false,
         responsiveClass: true,
@@ -469,6 +466,10 @@
     })
   </script>
 
+
+  <!-- BackToTop -->
+  <script src="./js/util.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

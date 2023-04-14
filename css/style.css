@@ -848,56 +848,250 @@ p.textCount{
     background: #b7b7b7;
 }
 
-@media (max-width: 576px) {
+
+/* BACK TO TOP */
+.backtotop {
+    display: block;
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    z-index: 9;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;  
+    background: var(--primary-color);
+    border-radius: 4px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.backtotop:hover {
+    opacity: .8;
+    color: #fff;
+
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 575px) {
+    /* Classes */
     .stdClasses__contents{
-        background-size: cover
+        background-size: cover;
     }
 }
 
-
-
-@media (min-width: 576px) {
-    .container{
+@media screen and (min-width: 576px) {
+    .container, .container-sm{
         max-width: 540px;
-        margin-right: auto;
         margin-left: auto;
-
+        margin-right: auto;
     }
-
+    /* Classes */
     .stdClasses__contents{
-        background-size: cover
+        background-size: cover;
     }
 }
 
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container{
         max-width: 720px;
-        margin-right: auto;
         margin-left: auto;
-    }
+        margin-right: auto;
+    }   
+
+
+    /* Classes */
 
     .stdClasses__contents{
-        background-size: cover
+        background-size: cover;
     }
 }
 
 
-@media (min-width: 992px) {
+
+@media screen and (min-width: 992px) {
     .container{
         max-width: 960px;
-        margin-right: auto;
         margin-left: auto;
+        margin-right: auto;
     }
 }
 
 
-
-
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .container{
         max-width: 1140px;
-        margin-right: auto;
         margin-left: auto;
+        margin-right: auto;
     }
 }
+
+
+
+
+
+
+
+@media screen and (max-width:992px){
+
+     /* HEADER */
+
+    header {
+          height: auto;        
+      }
+
+    .dark .header__fix {
+        background-color: transparent;        
+    }   
+
+    .header__fixnav {       
+        height: auto;
+        padding: 0;
+    }
+
+    .dark .header__fixnav {
+        background-color: #161c2d;
+    }
+
+    .header__fix {
+        position: fixed;
+    }  
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0.5rem 0rem;
+    }
+
+    .navbar .navbar-brand {
+        margin-top: 2px;
+    }
+
+    .navbar-toggler {
+        display: block;
+        background-color: var(--primary-color);
+        color: white;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        font-size: 20px;
+        padding: 0;
+        margin-bottom: 8px;
+        
+    }
+    
+    .header__darklight {
+        position: absolute;
+        right: 50px;
+        top: 18px;
+    }
+
+    .dark .header__darklight .gg-sun {
+        margin-top: 4px;
+    }
+
+    .header__fixnav .navbar .navbar-brand img {
+        margin-top: -2px;
+       
+    }
+
+    .header__fixnav .navbar .navbar-brand span {
+        margin-top: -1px;
+    }   
+
+    .header__fixnav .navbar .header__darklight {
+        margin-top: 0px;
+    }
+
+
+}    
+
+
+@media screen and (max-width:991px) {
+    /* Number */
+    .borderStdNum{
+        border-right: 0;
+    }
+
+    .stdNumbers__digits .numberCount{
+        font-size: 35px;
+    }
+
+    .stdNumbers__digits .textCount{
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (max-width:481px) {
+    /* HEAR */   
+
+    header.header__fixnav {
+        height: 64px;
+    }
+
+    .navbar .navbar-brand span {
+        font-size: 28px;
+    }
+    
+    .header__darklight {
+        right: 45px;    
+    }
+}
+
+@media screen and (max-width:381px) {
+    /* HEADER */
+    
+    header.header__fix {
+        height: 64px;
+    }
+
+    header.header__fixnav {
+        height: 54px;
+    }
+
+    .navbar .navbar-brand span{
+        margin-top: -4px;
+        font-size: 24px;
+    }
+
+    .navbar .navbar-brand img {
+        display: block;
+        height: 38px;
+        width: 38px;
+        margin-top: -5px;
+    }
+    
+    .header__darklight {         
+        top: 11px;  
+    }
+    
+    .navbar-toggler {        
+        margin-bottom: 10px;        
+    }
+
+    .header__fixnav .navbar .header__darklight {
+        margin-top: 2px;
+    }
+
+    .header__fixnav .navbar-toggler {
+        margin-bottom: 8px;
+    }
+}
+
+
