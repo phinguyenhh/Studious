@@ -106,6 +106,18 @@ header {
     transition: all 0.5s ease;
 }
 
+header .showIcon  .fa-bars {
+    display: none;
+}
+
+.navbar-togglerg .fa-xmark {
+    display: none;
+}
+
+.navbar-toggler.showIcon  .fa-xmark {
+    display: block;
+}
+
 .header__fix {
     position: sticky;
     right: 0;
@@ -1466,10 +1478,10 @@ p.textCount{
 
     .stdNumbers__digits .textCount{
         font-size: 15px;
- 
    
-}    
+}   
 
+}
 
 @media screen and (max-width:481px) {
     /* HEAR */   
