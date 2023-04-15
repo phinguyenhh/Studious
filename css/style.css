@@ -1389,10 +1389,7 @@ p.textCount{
 
 
 
-<<<<<<< HEAD
-=======
-}    
->>>>>>> parent of d726823 (update)
+   
 
 
 
@@ -1406,9 +1403,6 @@ p.textCount{
     .navbar-expand-lg .navbar-nav .nav-item.show .nav-link.dropdown-toggle{
         margin-left: 62.5px;       
     }
-    header .form-inline {
-        
-    }    
 
     header .nav-link {
         transition:none;
@@ -1447,9 +1441,7 @@ p.textCount{
     .stdNumbers__digits .textCount{
         font-size: 15px;
  
-    button.search-btn {
-        right: 35%;
-    }
+   
 }    
 
 
