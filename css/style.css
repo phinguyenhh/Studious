@@ -1474,7 +1474,10 @@ p.textCount{
     }
 
 
-}    
+    .navbar-collapse {
+        background-color: white;
+        margin-top: 8px;
+    }
 
     .navbar-nav {
         justify-content: center;
@@ -1483,14 +1486,54 @@ p.textCount{
         margin-top: 0px;
     }
 
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 10px 0;
+        font-size: 15px;
+    }
 
+    header .active .nav-link {
+        color: var(--primary-color);
+    }
 
+    header .nav-item i {       
+        top: 17px;
+        right: 8.5px;        
+    }
 
+    .navbar-expand-lg .navbar-nav .nav-item:nth-child(3) .nav-link {
+        margin-right: 14.5px;
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+        margin-right: 6px;
+        margin-left: 6.5px;
+    }
 
-}    
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: var(--primary-color);
+    }
 
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        text-align: center;
+        transform: translateX(-7px) translateY(-8px);     
+        border: 1px solid #eee;
+    }
 
-
+    .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+        content: '';
+        width: 14px;
+        height: 14px;
+        background: var(--bg-color);
+        border: 1px solid var(--border-color);
+        display: block;
+        border-right: none;
+        border-bottom: none;
+        transform: translateX(-50%) rotateZ(45deg);
+        position: absolute;
+        top: -7px;
+        left: 49%;
+        z-index: 1001;
+    }
 
     .navbar-expand-lg .navbar-nav .dropdown-menu:before {
         border: 1px solid #eee;
@@ -1501,10 +1544,7 @@ p.textCount{
     .navbar-expand-lg .navbar-nav .nav-item.show .nav-link.dropdown-toggle{
         margin-left: 62.5px;       
     }
-    header .form-inline {
-        
-    }    
-
+   
     header .nav-link {
         transition:none;
     }
@@ -1523,6 +1563,26 @@ p.textCount{
         right: 35%;
     }
 }    
+
+ 
+
+
+@media screen and (max-width:991px) {
+    /* Number */
+    .borderStdNum{
+        border-right: 0;
+    }
+
+    .stdNumbers__digits .numberCount{
+        font-size: 35px;
+    }
+
+    .stdNumbers__digits .textCount{
+        font-size: 15px;
+    }
+}
+
+
 
 @media screen and (max-width:481px) {
     /* HEAR */   
