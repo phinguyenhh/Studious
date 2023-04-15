@@ -1376,10 +1376,7 @@ p.textCount{
     }
 
 
-    .navbar-collapse {
-        background-color: white;
-        margin-top: 8px;
-    }
+}    
 
     .navbar-nav {
         justify-content: center;
@@ -1390,35 +1387,15 @@ p.textCount{
 
 
 
-    header .nav-item i {       
-        top: 17px;
-        right: 8.5px;        
-    }
+
+
+<<<<<<< HEAD
+=======
+}    
+>>>>>>> parent of d726823 (update)
 
 
 
-
-    .navbar-expand-lg .navbar-nav .dropdown-menu {
-        text-align: center;
-        transform: translateX(-7px) translateY(-8px);     
-        border: 1px solid #eee;
-    }
-
-    .navbar-expand-lg .navbar-nav .dropdown-menu:before {
-        content: '';
-        width: 14px;
-        height: 14px;
-        background: var(--bg-color);
-        border: 1px solid var(--border-color);
-        display: block;
-        border-right: none;
-        border-bottom: none;
-        transform: translateX(-50%) rotateZ(45deg);
-        position: absolute;
-        top: -7px;
-        left: 49%;
-        z-index: 1001;
-    }
 
     .navbar-expand-lg .navbar-nav .dropdown-menu:before {
         border: 1px solid #eee;
@@ -1469,8 +1446,12 @@ p.textCount{
 
     .stdNumbers__digits .textCount{
         font-size: 15px;
+ 
+    button.search-btn {
+        right: 35%;
     }
 }    
+
 
 @media screen and (max-width:481px) {
     /* HEAR */   
