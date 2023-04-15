@@ -1487,33 +1487,21 @@ p.textCount{
         align-items: center;
     }
 
-    .navbar-collapse {
-        margin-top: -8px;
-    }
 
-    
+
 
     /* Dark theme */
     .dark  .navbar-nav{
         background-color:var(  --blue--clor);
     }
 
-    .navbar-nav:last-child {
-        border: 1px solid  rgba(255, 255, 255, 0.2);;
-    }
 
-    .header__fixnav {
-        display: none;
-    }
 
-    .dark header .active .nav-link {
-        color: var(--primary-color);
-    }
 
-    .navbar-expand-lg .navbar-nav .dropdown-menu {
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    
+
+
+
+
     /* Number */
     .borderStdNum{
         border-right: 0;
@@ -1526,7 +1514,9 @@ p.textCount{
     .stdNumbers__digits .textCount{
         font-size: 15px;
     }
-}    
+}
+
+
 
 @media screen and (max-width:481px) {
     /* HEAR */   
