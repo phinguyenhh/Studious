@@ -8,13 +8,14 @@
 :root {
     --primary-color: #0d369f;
     --secondary-color: #ff6e65;
-    --bg-color: #fff;
-    --bg-color: #fff;
+    --bg-color:#fff;
     --heading-color: #060606;
+    
 }
 
 .dark {
     --primary-color:#4867b0;
+    --blue--clor:#161c2d;
 }
 
 body,
@@ -54,8 +55,7 @@ ol {
 }
 
 .topHeader a {
-    color: #fff;
-    color: #fff;
+    color:var( --bg-color);
     font-size: 15px;
     font-weight: 500;
     transition: all 0.5s;
@@ -67,8 +67,7 @@ ol {
 
 .topHeader .topHeader__left i {
     margin-right: 8px;
-    color: #fff;
-    color: #fff;
+    color:var( --bg-color);
     font-size: 12px;
     position: relative;
     top: 50%;
@@ -109,18 +108,6 @@ header {
     transition: all 0.5s ease;
 }
 
-header .showIcon  .fa-bars {
-    display: none;
-}
-
-.navbar-togglerg .fa-xmark {
-    display: none;
-}
-
-.navbar-toggler.showIcon  .fa-xmark {
-    display: block;
-}
-
 .header__fix {
     position: sticky;
     right: 0;
@@ -133,8 +120,7 @@ header .showIcon  .fa-bars {
     padding: 0px;
     border-bottom: none;
     z-index: 999 ;
-    background-color: #fff;
-    background-color: #fff;
+    background-color:var( --bg-color);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
     height: 70px;
 }
@@ -160,8 +146,7 @@ header .showIcon  .fa-bars {
 }
 
 .header__fixnav .gg-moon,.header__fixnav .gg-moon:after {
-    color: #060606;
-    color: #060606;
+    color: var( --heading-color);
 }
 
 .navbar {
@@ -214,8 +199,7 @@ header .nav-link {
 }
 
 .navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
-    margin-right: 6px;
-    margin-right: 6px;
+    margin-right: -10px;
     margin-left: -4.5px;
 } 
 
@@ -226,12 +210,12 @@ header .nav-link:hover {
 .dropdown-menu {
     min-width: 12rem;
     padding: 1rem 0;
+    margin: 0;
 }
 
 a.dropdown-item {
     font-size: 16px;
-    color: #060606;
-    color: #060606;
+    color: var( --heading-color);
     padding: 5px 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -266,8 +250,7 @@ a.dropdown-item:hover {
 
 header .header__inputsearch input {
     font-size: 15px;
-    color: #060606;
-    color: #060606;
+    color: var( --heading-color);
     border: none;
     background: transparent;
     padding: 9px 35px 10px 20px;
@@ -284,9 +267,9 @@ header .form-inline {
 }
 
 .form-control:focus {
-    color:white;
+    color: var(--heading-color);
     background-color: none;
-    border-color:white;
+    border-color:#eee;
     outline: none;
     box-shadow: none;
 }
@@ -423,12 +406,12 @@ header .active .nav-link {
 }
 
 .dark header {
-    background-color: #161c2d;
+    background-color: var(  --blue--clor);
 }
 
 .dark .darklight {
    
-    background-color:#161c2d;
+    background-color:var(  --blue--clor);
     background-color: transparent;
   
 }
@@ -445,14 +428,14 @@ header .active .nav-link {
 }
 
 .dark .navbar-expand-lg .navbar-nav .dropdown-menu {
-    background: #161c2d;
+    background: var(  --blue--clor);
 }
 
 .dark .navbar-expand-lg .navbar-nav .dropdown-menu:before {
     content: '';
     width: 14px;
     height: 14px;
-    background: #161c2d;
+    background: var(  --blue--clor);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: block;
     border-right: none;
@@ -534,8 +517,7 @@ header .active .nav-link {
     font-size: 70px;
     line-height: 80px;
     font-weight: bold;
-    color: #fff;
-    color: #fff;
+    color:var( --bg-color);
     margin: 0;
 }
 
@@ -544,11 +526,9 @@ header .active .nav-link {
     padding: 14px 29.5px;
     font-weight: 600;
     font-size: 16px;
-    color: #060606;
-    color: #060606;
+    color: var( --heading-color);
     border-radius: 4px;
-    background: #fff;
-    background: #fff;
+    background:var( --bg-color);
     border: none;
     transition: all .25s ease-in-out;
     cursor: pointer;
@@ -556,8 +536,7 @@ header .active .nav-link {
 
 .btnCarousel:hover {
     background: var(--secondary-color);
-    color: #fff;
-    color: #fff;
+    color:var( --bg-color);
 }
 
 .stdCarousel__bg {
@@ -582,8 +561,7 @@ header .active .nav-link {
     width: 12px;
     height: 12px;
     margin: 5px 2px;
-    background: #fff;
-    background: #fff;
+    background:var( --bg-color);
     display: block;
     transition: opacity .2s ease;
     border-radius: 30px;
@@ -627,21 +605,19 @@ header .active .nav-link {
 
 .stdObjects .stdObjects__box i {
     font-size: 45px;
-    color: #fff;
-    color: #fff;
+    color:var( --bg-color);
 }
 
 .stdObjects h4 a.title-head {
     margin-top: 25px;
     display: block;
-    color: #fff;
-    color: #fff;
+    color:var( --bg-color);
     font-weight: 600;
     font-size: 24px;
 }
 
 .dark .stdObjects {
-    background-color: #161c2d;
+    background-color: var(  --blue--clor);
 }
 
 
@@ -707,7 +683,7 @@ h3.title-main:before, h3.title-main:after {
 }
 /* DARK THEME */
 .dark .stdStudious__main {
-    background-color: #161c2d;
+    background-color: var(  --blue--clor);
 }
 
 .dark .stdStudious h3.title-main,.dark .stdStudious h3.stdStudious__title {
@@ -773,7 +749,7 @@ h3.title-main:before, h3.title-main:after {
 
 /* DARK THEME CLASSES */
 .dark .stdClasses__items{
-    background-color: #161c2d;
+    background-color: var(  --blue--clor);
 }
 
 .dark .stdClasses__icon i{
@@ -782,8 +758,7 @@ h3.title-main:before, h3.title-main:after {
 }
 
 .dark .stdClasses__text h5{
-    color: #fff;
-    color: #fff;
+    color:var( --bg-color);
 }
 
 .dark .stdClasses__text p{
@@ -800,8 +775,7 @@ h3.title-main:before, h3.title-main:after {
     font-size: 40px;
     line-height: 50px;
     font-weight: 600;
-    color: #060606;
-    color: #060606;
+    color: var( --heading-color);
     position: relative; 
 }
 
@@ -842,14 +816,12 @@ h3.title-main-number::after{
 .stdNumbers__digits .numberCount{
     font-size: 46px;
     font-weight: 600;
-    color: #060606;
-    color: #060606;
+    color: var( --heading-color);
 }
 
 p.textCount{
     text-transform: uppercase;
-    color: #060606;
-    color: #060606;
+    color: var( --heading-color);
 }
 
 .borderStdNum{
@@ -859,7 +831,7 @@ p.textCount{
 /* DARK THEME NUMBER */
 
 .dark .stdNumbers{
-    background-color: #161c2d;
+    background-color: var(  --blue--clor);
 }
 
 .dark h3.title-main-number{
@@ -880,6 +852,10 @@ p.textCount{
 }
 
 
+/* FEEDBACK */
+.stdFeedback__title span{
+    color: var(--secondary-color);
+}
 
 .stdFeedback__title h3{
     font-size: 40px;
@@ -958,7 +934,7 @@ p.textCount{
 }
 
 .dark .stdFeedback__customers{
-    background-color: #161c2d;
+    background-color: var(  --blue--clor);
     box-shadow: 0 20px 62px hsla(222, 34%, 17%, 1);
 }
 
@@ -1081,7 +1057,7 @@ p.textCount{
 }
 
 .dark .stdInstructors__contents{
-    background-color: #161c2d;
+    background-color: var(  --blue--clor);
     box-shadow: 0 20px 62px hsla(222, 34%, 17%, 1);
 }
 
@@ -1293,7 +1269,7 @@ p.textCount{
 
 /* Dark theme contact */
 .dark .footer__comunity{
-    background: #161c2d;
+    background: var(  --blue--clor);
 }
 
 
@@ -1309,8 +1285,7 @@ p.textCount{
     border: none;
     outline: none;
     cursor: pointer;
-    color: #fff;
-    color: #fff;
+    color:var( --bg-color);
     width: 40px;
     height: 40px;
     text-align: center;
@@ -1325,7 +1300,7 @@ p.textCount{
 
 .backtotop:hover {
     opacity: .8;
-    color: #fff;
+    color:var( --bg-color);
 
 }
 
@@ -1336,86 +1311,6 @@ p.textCount{
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 575px) {
-    /* Classes */
-    .stdClasses__contents{
-        background-size: cover;
-    }
-}
-
-@media screen and (min-width: 576px) {
-    .container, .container-sm{
-        max-width: 540px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /* Classes */
-    .stdClasses__contents{
-        background-size: cover;
-    }
-}
-
-
-@media screen and (min-width: 768px) {
-    .container{
-        max-width: 720px;
-        margin-left: auto;
-        margin-right: auto;
-    }   
-
-
-    /* Classes */
-
-    .stdClasses__contents{
-        background-size: cover;
-    }
-
-
-}
-
-
-
-@media screen and (min-width: 992px) {
-    .container{
-        max-width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
-@media screen and (min-width: 1200px) {
-    .container{
-        max-width: 1140px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
-
-@media screen and (width: 1200px) {
-     /* Feedback */
-     .stdFeedback__customer-img img{
-        margin-right: 40px;
-    }
-}
-
-
-@media screen and (min-width: 1280px) {
-    .container{
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
-
-
-
-
-
 @media screen and (max-width:992px){
 
      /* HEADER */
@@ -1423,6 +1318,14 @@ p.textCount{
     header {
           height: auto;        
       }
+
+    header .header__inputsearch input {
+        border: 1px solid #eee;
+        height: 45px;
+        padding-top: 8px;
+      }  
+
+  
 
     .dark .header__fix {
         background-color: transparent;        
@@ -1434,7 +1337,7 @@ p.textCount{
     }
 
     .dark .header__fixnav {
-        background-color: #161c2d;
+        background-color: var(  --blue--clor);
     }
 
     .header__fix {
@@ -1463,7 +1366,19 @@ p.textCount{
         margin-bottom: 8px;
         
     }
+
+    .navbar-toggler.showIcon .fa-bars{
+        display: none;
+    }
     
+    .navbar-toggler.showIcon .fa-xmark{
+        display: block;
+    }
+
+    .navbar-toggler .fa-xmark {
+        display: none;
+    }
+
     .header__darklight {
         position: absolute;
         right: 50px;
@@ -1487,17 +1402,62 @@ p.textCount{
         margin-top: 0px;
     }
 
+    .navbar-nav {
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-top: 16px;
+        background-color: white;
+    }
 
-}    
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 10px 0;
+        font-size: 15px;
+    }
 
+    header .active .nav-link {
+        color: var(--primary-color);
+    }
 
+    header .nav-item i {       
+        top: 16.5px;
+        right: 8.5px;     
+    }
 
+    .navbar-expand-lg .navbar-nav .nav-item:nth-child(3) .nav-link {
+        margin-right: 14.5px;
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+        margin-right: 6px;
+        margin-left: 6.5px;
+    }
 
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: var(--primary-color);
+    }
 
-
-   
-
-
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        text-align: center;
+        transform: translateX(-7px) translateY(-8px);     
+        border: 1px solid #eee
+    }
+  
+    .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+        content: '';
+        width: 14px;
+        height: 14px;
+        background: var(--bg-color);
+        border: 1px solid var(--border-color);
+        display: block;
+        border-right: none;
+        border-bottom: none;
+        transform: translateX(-50%) rotateZ(45deg);
+        position: absolute;
+        top: -7px;
+        left: 49%;
+        z-index: 1001;
+    }
 
     .navbar-expand-lg .navbar-nav .dropdown-menu:before {
         border: 1px solid #eee;
@@ -1508,14 +1468,18 @@ p.textCount{
     .navbar-expand-lg .navbar-nav .nav-item.show .nav-link.dropdown-toggle{
         margin-left: 62.5px;       
     }
-
+   
     header .nav-link {
         transition:none;
     }
 
-    header .nav-item .show i {
+    header .nav-item.show i {
         right: 11px;
+    }
+
+    header .nav-item .show i {     
         transition: none;
+
     }
 
     .form-inline {
@@ -1523,17 +1487,33 @@ p.textCount{
         align-items: center;
     }
 
+    .navbar-collapse {
+        margin-top: -8px;
+    }
 
+    
 
+    /* Dark theme */
+    .dark  .navbar-nav{
+        background-color:var(  --blue--clor);
+    }
 
+    .navbar-nav:last-child {
+        border: 1px solid  rgba(255, 255, 255, 0.2);;
+    }
 
+    .header__fixnav {
+        display: none;
+    }
 
+    .dark header .active .nav-link {
+        color: var(--primary-color);
+    }
 
-
-
-
-
-
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
     /* Number */
     .borderStdNum{
         border-right: 0;
@@ -1545,10 +1525,8 @@ p.textCount{
 
     .stdNumbers__digits .textCount{
         font-size: 15px;
-   
-}   
-
-}
+    }
+}    
 
 @media screen and (max-width:481px) {
     /* HEAR */   
@@ -1604,4 +1582,11 @@ p.textCount{
     .header__fixnav .navbar-toggler {
         margin-bottom: 8px;
     }
+
+    .show .navbar{
+        margin-right: 2px;
+    }
 }
+
+
+
