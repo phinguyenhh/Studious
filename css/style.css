@@ -1478,16 +1478,18 @@ p.textCount{
         justify-content: center;
         align-items: center;
     }
- 
-    button.search-btn {
-        right: 35%;
-    }
-}    
-
- 
 
 
-@media screen and (max-width:991px) {
+
+
+
+
+
+
+
+
+
+
     /* Number */
     .borderStdNum{
         border-right: 0;
@@ -1500,9 +1502,7 @@ p.textCount{
     .stdNumbers__digits .textCount{
         font-size: 15px;
     }
-}
-
-
+}    
 
 @media screen and (max-width:481px) {
     /* HEAR */   
