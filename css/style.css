@@ -15,7 +15,6 @@
 
 .dark {
     --primary-color:#4867b0;
-    --blue--clor:#161c2d;
 }
 
 body,
@@ -267,9 +266,9 @@ header .form-inline {
 }
 
 .form-control:focus {
-    color: var(--heading-color);
+    color:white;
     background-color: none;
-    border-color:#eee;
+    border-color:white;
     outline: none;
     box-shadow: none;
 }
@@ -406,12 +405,12 @@ header .active .nav-link {
 }
 
 .dark header {
-    background-color: var(  --blue--clor);
+    background-color: #161c2d;
 }
 
 .dark .darklight {
    
-    background-color:var(  --blue--clor);
+    background-color:#161c2d;
     background-color: transparent;
   
 }
@@ -428,14 +427,14 @@ header .active .nav-link {
 }
 
 .dark .navbar-expand-lg .navbar-nav .dropdown-menu {
-    background: var(  --blue--clor);
+    background: #161c2d;
 }
 
 .dark .navbar-expand-lg .navbar-nav .dropdown-menu:before {
     content: '';
     width: 14px;
     height: 14px;
-    background: var(  --blue--clor);
+    background: #161c2d;
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: block;
     border-right: none;
@@ -617,7 +616,7 @@ header .active .nav-link {
 }
 
 .dark .stdObjects {
-    background-color: var(  --blue--clor);
+    background-color: #161c2d;
 }
 
 
@@ -683,7 +682,7 @@ h3.title-main:before, h3.title-main:after {
 }
 /* DARK THEME */
 .dark .stdStudious__main {
-    background-color: var(  --blue--clor);
+    background-color: #161c2d;
 }
 
 .dark .stdStudious h3.title-main,.dark .stdStudious h3.stdStudious__title {
@@ -749,7 +748,7 @@ h3.title-main:before, h3.title-main:after {
 
 /* DARK THEME CLASSES */
 .dark .stdClasses__items{
-    background-color: var(  --blue--clor);
+    background-color: #161c2d;
 }
 
 .dark .stdClasses__icon i{
@@ -831,7 +830,7 @@ p.textCount{
 /* DARK THEME NUMBER */
 
 .dark .stdNumbers{
-    background-color: var(  --blue--clor);
+    background-color: #161c2d;
 }
 
 .dark h3.title-main-number{
@@ -930,7 +929,7 @@ p.textCount{
 }
 
 .dark .stdFeedback__customers{
-    background-color: var(  --blue--clor);
+    background-color: #161c2d;
     box-shadow: 0 20px 62px hsla(222, 34%, 17%, 1);
 }
 
@@ -1053,7 +1052,7 @@ p.textCount{
 }
 
 .dark .stdInstructors__contents{
-    background-color: var(  --blue--clor);
+    background-color: #161c2d;
     box-shadow: 0 20px 62px hsla(222, 34%, 17%, 1);
 }
 
@@ -1265,7 +1264,7 @@ p.textCount{
 
 /* Dark theme contact */
 .dark .footer__comunity{
-    background: var(  --blue--clor);
+    background: #161c2d;
 }
 
 
@@ -1367,6 +1366,66 @@ p.textCount{
 
 
 
+@media screen and (max-width: 575px) {
+    /* Classes */
+    .stdClasses__contents{
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container, .container-sm{
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Classes */
+    .stdClasses__contents{
+        background-size: cover;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+
+
+    /* Classes */
+
+    .stdClasses__contents{
+        background-size: cover;
+    }
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .container{
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+
 @media screen and (max-width:992px){
 
      /* HEADER */
@@ -1374,14 +1433,6 @@ p.textCount{
     header {
           height: auto;        
       }
-
-    header .header__inputsearch input {
-        border: 1px solid #eee;
-        height: 45px;
-        padding-top: 8px;
-      }  
-
-  
 
     .dark .header__fix {
         background-color: transparent;        
@@ -1393,7 +1444,7 @@ p.textCount{
     }
 
     .dark .header__fixnav {
-        background-color: var(  --blue--clor);
+        background-color: #161c2d;
     }
 
     .header__fix {
@@ -1458,12 +1509,17 @@ p.textCount{
         margin-top: 0px;
     }
 
+
+    .navbar-collapse {
+        background-color: white;
+        margin-top: 8px;
+    }
+
     .navbar-nav {
         justify-content: center;
         align-items: center;
         padding: 20px;
-        margin-top: 16px;
-        background-color: white;
+        margin-top: 0px;
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
@@ -1476,8 +1532,8 @@ p.textCount{
     }
 
     header .nav-item i {       
-        top: 16.5px;
-        right: 8.5px;     
+        top: 17px;
+        right: 8.5px;        
     }
 
     .navbar-expand-lg .navbar-nav .nav-item:nth-child(3) .nav-link {
@@ -1496,9 +1552,9 @@ p.textCount{
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         text-align: center;
         transform: translateX(-7px) translateY(-8px);     
-        border: 1px solid #eee
+        border: 1px solid #eee;
     }
-  
+
     .navbar-expand-lg .navbar-nav .dropdown-menu:before {
         content: '';
         width: 14px;
@@ -1529,13 +1585,9 @@ p.textCount{
         transition:none;
     }
 
-    header .nav-item.show i {
+    header .nav-item .show i {
         right: 11px;
-    }
-
-    header .nav-item .show i {     
         transition: none;
-
     }
 
     .form-inline {
@@ -1546,10 +1598,6 @@ p.textCount{
 
 
 
-    /* Dark theme */
-    .dark  .navbar-nav{
-        background-color:var(  --blue--clor);
-    }
 
 
 
@@ -1627,10 +1675,6 @@ p.textCount{
 
     .header__fixnav .navbar-toggler {
         margin-bottom: 8px;
-    }
-
-    .show .navbar{
-        margin-right: 2px;
     }
 }
 
