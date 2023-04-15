@@ -1477,11 +1477,11 @@ p.textCount{
         right: 11px;
     }
 
-    header .nav-item .show i {     
+    header .nav-item i {     
         transition: none;
 
     }
-
+    
     .form-inline {
         justify-content: center;
         align-items: center;
@@ -1588,5 +1588,79 @@ p.textCount{
     }
 }
 
+
+@media screen and (max-width: 575px) {
+    /* Classes */
+    .stdClasses__contents{
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container, .container-sm{
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Classes */
+    .stdClasses__contents{
+        background-size: cover;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+
+
+    /* Classes */
+
+    .stdClasses__contents{
+        background-size: cover;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .container{
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+@media screen and (width: 1200px) {
+     /* Feedback */
+     .stdFeedback__customer-img img{
+        margin-right: 40px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+    .container{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 
