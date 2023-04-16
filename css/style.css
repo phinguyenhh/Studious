@@ -41,6 +41,10 @@ ol {
     max-width: 1200px;
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 /* TOP HEADER */
 
 .topHeader {
@@ -1775,3 +1779,4 @@ p.textCount{
 }
 
 }
+

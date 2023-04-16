@@ -31,7 +31,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  
   <!-- STYLE CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -711,9 +711,11 @@
   </script>
 
   <!-- Icon toggler header -->
+  <!-- noscroll when open toggler -->
   <script>
      document.getElementById('navbar-toggler').onclick = function () {
       document.getElementById('navbar-toggler').classList.toggle('showIcon')
+      document.getElementById('myBody').classList.toggle('noscroll')
     }
   </script>
 
@@ -772,6 +774,30 @@
   <!-- BackToTop -->
   <script src="./js/util.js"></script>
   <script src="./js/main.js"></script>
+
+
+  <!-- Active header -->
+<script>
+
+const items = document.querySelectorAll('.nav-item');
+    if (items.length) {
+      items.forEach((item) => {
+        item.addEventListener('click', (e) => {
+          items.forEach((item) => {
+              item.classList.remove('active');
+          });
+          e.preventDefault();
+          item.classList.add('active');
+        });
+      });
+    }
+    
+
+</script>
+
+
+
+
 </body>
 
 </html>
