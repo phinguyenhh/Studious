@@ -31,7 +31,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  
   <!-- STYLE CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -72,9 +72,10 @@
           </a>
 
         </h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stdNavbar"
+        <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#stdNavbar"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="stdNavbar">
@@ -101,14 +102,16 @@
             </li>
 
           </ul>
-          <form class="form-inline ">
-            <div class="header__inputsearch">
-              <input class="form-control" type="search" placeholder="Enter Keyword" aria-label="Search">
-
-            </div>
-            <button class="btn search-btn"><i class="fa fa-search"></i></button>
-
-          </form>
+          <ul class="navbar-nav">
+            <form class="form-inline ">
+              <div class="header__inputsearch ml-lg-3">
+                <input class="form-control" type="search" placeholder="Enter Keyword" aria-label="Search">
+  
+              </div>
+              <button class="btn search-btn"><i class="fa fa-search"></i></button>
+  
+            </form>
+          </ul>
         </div>
         <div class="header__darklight">
           <button class="darklight" id="darklight">
@@ -707,6 +710,16 @@
     }
   </script>
 
+  <!-- Icon toggler header -->
+  <!-- noscroll when open toggler -->
+  <script>
+     document.getElementById('navbar-toggler').onclick = function () {
+      document.getElementById('navbar-toggler').classList.toggle('showIcon')
+      document.getElementById('myBody').classList.toggle('noscroll')
+    }
+  </script>
+
+
   <!-- Scroll header -->
 
   <script>
@@ -761,6 +774,30 @@
   <!-- BackToTop -->
   <script src="./js/util.js"></script>
   <script src="./js/main.js"></script>
+
+
+  <!-- Active header -->
+<script>
+
+const items = document.querySelectorAll('.nav-item');
+    if (items.length) {
+      items.forEach((item) => {
+        item.addEventListener('click', (e) => {
+          items.forEach((item) => {
+              item.classList.remove('active');
+          });
+          e.preventDefault();
+          item.classList.add('active');
+        });
+      });
+    }
+    
+
+</script>
+
+
+
+
 </body>
 
 </html>
