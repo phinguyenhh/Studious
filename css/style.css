@@ -1267,6 +1267,34 @@ p.textCount{
     background: var(  --blue--clor);
 }
 
+.dark h4.title-head{
+    color: #fff;
+}
+
+.dark .footer__title p{
+    color: #b7b7b7;
+}
+
+.dark .contact-form input{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .contact-form ::placeholder{
+    color: #8b8b8b;
+}
+
+.dark .position-relative{
+    background: #151c2f;
+}
+
+.dark .position-relative::before{
+    content: "";
+    background: #151c2f;
+    top: -50px;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+}
 
 
 /* BACK TO TOP */
@@ -1525,6 +1553,11 @@ p.textCount{
     .stdNumbers__digits .textCount{
         font-size: 15px;
     }
+
+    /* CONTACT */
+    .footer__comunity{
+        margin: 0 2em;
+    }
 }    
 
 
@@ -1537,7 +1570,31 @@ p.textCount{
         line-height: 55px;
 
     }
+
+    /* CONTACT */
+    .footer__comunity{
+        top: -78px;
+    }
+
+    .contact-elements{
+        margin-top: 200px;
+    }
 }
+
+@media (max-width: 736px)
+{
+    /* CONTACT */
+    .footer__comunity{
+        margin: 0 1em;
+    }
+
+    .footer__sub{
+        margin-top: 2em;
+        padding: 40px 0;
+    }
+
+}
+
 
 @media (max-width: 415px)
 {
