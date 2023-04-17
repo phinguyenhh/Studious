@@ -5,7 +5,7 @@
 The above project is only part of the official _website homepage_. You can visit the W3Layout Studios Website [here](https://wp.w3layouts.com/studious/).
 
 ## 🍿 Description
-**Tech stack used:
+**Tech stack used**:
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap 4.6
 - ![My Skills](https://skillicons.dev/icons?i=html,css,js,bootstrap)
 
