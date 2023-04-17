@@ -1163,7 +1163,18 @@ p.textCount{
     font-size: 16px;
     font-weight: 600;
     border-radius: 0 8px 8px 0;
+    transition: all .5s;
 }
+
+.contact-form button:hover{
+    opacity: .9;
+}
+
+.contact-form input[type=email]:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(46, 202, 139, 0.25);
+}
+
 
 .footer__archives h6{
     color: #fff;
@@ -1258,8 +1269,6 @@ p.textCount{
 .footer__copyright a{
     color: #fff;
 }
-
-
 
 
 /* Dark theme contact */
