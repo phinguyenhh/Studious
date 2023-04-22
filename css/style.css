@@ -610,6 +610,11 @@ header .active .nav-link {
     color:var( --bg-color);
     font-weight: 600;
     font-size: 24px;
+    transition: all 0.5s;
+}
+
+.stdObjects h4 a.title-head:hover {
+    color: black;
 }
 
 .dark .stdObjects {
@@ -669,6 +674,11 @@ h3.title-main:before, h3.title-main:after {
     line-height: 34px;
     font-weight: 600;
     color: black;
+    transition: all 0.5s;
+}
+
+.stdStudious h3:hover {
+    color: var(--secondary-color);
 }
 
 .stdStudious p.stdStudious__text {
@@ -684,6 +694,10 @@ h3.title-main:before, h3.title-main:after {
 
 .dark .stdStudious h3.title-main,.dark .stdStudious h3.stdStudious__title {
     color: white;
+}
+
+.dark .stdStudious h3:hover {
+    color: var(--secondary-color);
 }
 
 .dark h3.title-main:before, h3.title-main:after {
