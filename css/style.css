@@ -1258,6 +1258,11 @@ p.textCount{
     background: rgba(255, 255, 255, 0.06);
     text-align: center;
     display: inline-block;
+    transition: all .5s;
+}
+
+.icon-about ul a:hover{
+    opacity: .8;
 }
 
 .icon-about ul a i{
@@ -1290,6 +1295,27 @@ p.textCount{
     color: #fff;
 }
 
+.footer-hover li a{
+    transition: all .5s;
+}
+
+.footer-hover li:hover a{
+    color: #fff;
+}
+
+.footer__copyright .text-underline:hover{
+    text-decoration: underline;
+}
+
+.contacts__cols-three .text-hover{
+    transition: all .5s;
+}
+
+
+.contacts__cols-three .text-hover:hover{
+    color: #fff;
+}
+
 
 /* Dark theme contact */
 .dark .footer__comunity{
@@ -1306,6 +1332,7 @@ p.textCount{
 
 .dark .contact-form input{
     border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
 }
 
 .dark .contact-form ::placeholder{
